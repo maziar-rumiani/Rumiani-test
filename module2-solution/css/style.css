@@ -1,1 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.container{
+    margin: 5%;
+}
+
+h1{
+    text-align: center;
+}
+
+/* Foods textes properties.
+The default "width" is made for Mobile */
+.textFood{
+    float: left;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(137, 173, 238);
+    padding: 50px 10px;
+    border: 1px solid black;
+    margin:2% 5% ;
+    width: 90%;
+    text-align: justify; 
+}
+
+/* Width for Desctop */
+@media (min-width:992px ){
+    
+    .textFood{
+        width: 29.33%;
+        margin: 2%;
+     }
+}
+/*Width for Tablet */
+@media (min-width:768px ) and (max-width:991px ){
+    .textFood{
+        width: 46%;
+        margin: 2%;
+    }
+    /* Special width for the thrird food in Tablets */
+    .textFood:nth-child(3){
+        width: 96%;
+        margin: 2%;
+        float: left;
+    }
+}
+
+
+
+/* Foods titles properties */
+.foodName{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 1px solid black;
+    width: 70px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 80%;
+ }
+ .foodName:hover{
+     opacity: 100%;
+     border-color: white;
+ }
+
+/* Foods titles background color */
+
+.textFood:nth-child(1) .foodName{
+    background-color: red ;    
+}
+.textFood:nth-child(2) .foodName{
+    background-color: yellow ;   
+}
+.textFood:nth-child(3) .foodName{
+    background-color: black ;
+    color: blanchedalmond; 
+}
+
+ 
 
