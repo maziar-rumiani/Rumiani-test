@@ -1,0 +1,73 @@
+*{
+  box-sizing: border-box;
+  text-align: justify;
+}
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #5052d6;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#mobileMenu{
+  background-color: rgb(159, 47, 163);
+  color: black;
+  text-align: center;
+  border: 1px solid black;
+}
+.selectedItem{
+  border: 1px solid black;
+  
+}
+.selectedItem a{
+  color: black !important ;
+  text-align: center !important;
+}
+
+.selectedItem:hover{
+  background-color: #5052d6;
+  opacity: 70%;
+}
+.selectedItem:hover a{
+  font-size: 1.4em;
+  opacity: 100%;
+  font-weight: bold;
+}
+
+h1 ,h3 ,.menu{
+  text-align: center;
+  margin-bottom: 5%;
+}
+.container{
+  text-align: justify;
+  align-content: center;
+}
+.row {
+  width: 90%;
+  margin: 4% auto;
+}
+.foodItem{
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-bottom: 7%;
+}
+.foodItem a{
+  color: black;
+  text-align: justify;
+  background-color:#5052d6 ;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+}
+.foodItem a:hover{
+  text-decoration: none;
+  background-color: red;
+}
+.footer{
+  height: 300px;
+  margin-top: 50px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
