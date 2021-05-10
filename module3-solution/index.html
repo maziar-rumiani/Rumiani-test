@@ -103,7 +103,13 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
   <script>
-    alert("Hey ,I build the OPTIONAL part too.  If there's a problem, please lemme know. Thanks! ")
+(function (){
+  if(window.innerWidth>767) {
+    return  alert("You are  using a larg screen device, if you resize the screen you can see the mobile menu button.");
+  }  
+})();
+ 
+   
   </script>
 </body>
 </html>
